@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nishanth VM | Full-Stack Web Developer</title>
+    <meta
+      name="description"
+      content="Nishanth VM is a full-stack web developer building scalable, user-centric web applications with the MERN and PERN stacks: React, Next.js, Node.js, Express, PostgreSQL and MongoDB."
+    />
+    <meta name="author" content="Nishanth VM" />
+    <meta
+      name="keywords"
+      content="Nishanth VM, full-stack developer, MERN, PERN, React, Next.js, Node.js, Express, PostgreSQL, MongoDB, TypeScript, Kerala"
+    />
+    <link rel="canonical" href="https://nishanthvm.vercel.app/" />
+
+    <!-- Theme colour follows the active theme; the inline script below keeps it in sync -->
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f7f3ea" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nishanth VM" />
+    <meta property="og:title" content="Nishanth VM | Full-Stack Web Developer" />
+    <meta
+      property="og:description"
+      content="Full-stack web developer (MERN / Next.js / PERN) building scalable, user-centric web applications."
+    />
+    <meta property="og:url" content="https://nishanthvm.vercel.app/" />
+    <meta property="og:image" content="https://nishanthvm.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nishanth VM | Full-Stack Web Developer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack web developer (MERN / Next.js / PERN) building scalable, user-centric web applications."
+    />
+    <meta name="twitter:image" content="https://nishanthvm.vercel.app/og-image.png" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Geist:wght@300..700&family=Geist+Mono:wght@400;500&display=swap"
+    />
+
+    <!-- Apply the saved theme before first paint to avoid a flash of the wrong theme -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('nvm-theme');
+          var theme = saved === 'light' || saved === 'dark' ? saved : 'dark';
+          document.documentElement.dataset.theme = theme;
+        } catch (e) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:2rem;font-family:sans-serif">
+        This portfolio needs JavaScript. You can reach Nishanth at
+        <a href="mailto:nishanthvm94@gmail.com">nishanthvm94@gmail.com</a>.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
